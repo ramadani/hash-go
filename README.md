@@ -30,7 +30,7 @@ func (u *userService) Create(data map[string]string) error {
 }
 
 
-userSrv := NewUserService(bcbcryptHash.DefaultBcryptHash())
+userSrv := NewUserService(bcryptHash.DefaultBcryptHash())
 ...
 ```
 
