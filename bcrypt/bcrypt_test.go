@@ -26,6 +26,6 @@ func TestGenerateAndCheckHashUsingDefault(t *testing.T) {
 
 	isEq := hash.Check(s, hashed)
 	if !isEq {
-		t.Errorf("string hashed %s is not equal from %s", hashed, s)
+		t.Errorf("hashed string %s is not equal from %s", hashed, s)
 	}
 }
