@@ -2,6 +2,6 @@ package hash
 
 // Hash hashing string
 type Hash interface {
-	Make(string) string
-	Check(string) error
+	Make(s string) (string, error)
+	Check(s, hash string) bool
 }
